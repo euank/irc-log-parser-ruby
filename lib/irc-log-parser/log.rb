@@ -2,7 +2,7 @@ require 'json'
 
 module IrcLogParser
   class Log
-    attr :network, :channel, :time, :nick, :text, :is_notice
+    attr_accessor :network, :channel, :time, :nick, :text, :is_notice
 
     def initialize(args = {})
       @network   = args[:network]
